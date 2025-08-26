@@ -1,0 +1,153 @@
+:root {
+   --body-font-family: "Inter", sans-serif;
+   --body-bg: #1A1B21;
+   --body-color: #DCDCDC;
+   --h1-color: #FFFFFF;
+   --h2-color: #F5F5F5;
+   --subheading-color: #F3BF99;
+   --btn-bg: #FFFFFF;
+   --btn-border-radius: 6px;
+   --btn-border-color: #D1D5DB;
+   --btn-color: #1E1F26;
+   --btn-alt-bg: #5093E2;
+   --btn-alt-border-color: unset;
+   --btn-alt-color: #FFFFFF;
+   --small-color: #F5F5F5;
+   --footer-bg: #161619;
+}
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+a {
+   text-decoration: none;
+   cursor: pointer;
+   color: var(--body-color)
+}
+
+
+body {
+   font-family: var(--body-font-family);
+   font-size: 11px;
+   background: var(--body-bg);
+   color: var(--body-color);
+   min-height: 100vh;
+   max-width: 317px;
+   margin: 0 auto;
+}
+   
+#root {
+   display: flex;
+   flex-direction: column;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+section:not(:first-of-type),
+.info-container,
+footer {
+   padding: 0 2.188rem;
+}
+
+h1, h2 {
+   font-weight: 700;
+   margin: 0;
+   padding: 0;
+}
+
+h1 {
+   color: var(--h1-color);
+   font-size: 25px;
+   margin-bottom: 0.1em;
+}
+
+h2 {
+   font-size: 16px;
+   margin-bottom: 0.313em;
+}
+
+h2, small {
+   color: var(--h2-color);
+}
+
+.main-image {
+   background-image: url("images/dalonso.png");
+   background-size: 110%;
+   background-position-x: 80%;
+   background-repeat: no-repeat;
+   width: 317px;
+   height: 317px;
+   margin-bottom: 1.313rem;
+}
+
+.info-text {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.info-text > span {
+   color: var(--subheading-color);
+   font-weight: 300;
+   font-size: 12.8px;
+   margin-bottom: 0.45em;
+}
+
+.info-buttons {
+   display: flex;
+   justify-content: space-between;
+   margin: 1rem 0 2.063rem;
+}
+
+.btn {
+   flex: 0 0 46%;
+   width: 115px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 0.5em;
+   padding: 0.563rem 0.75rem;
+   font-size: 14px;
+   font-weight: 500;
+   color: var(--btn-color);
+   background-color: var(--btn-bg);
+   border-radius: var(--btn-border-radius);
+}
+
+.btn-alt {
+   background-color: var(--btn-alt-bg);
+   color: var(--btn-alt-color);
+}
+
+p {
+   line-height: 1.5;
+   font-weight: 300;
+   margin-bottom: 1.2rem;
+}
+   
+.interests {
+   margin-bottom: 1rem;
+}
+
+footer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 64px;
+   background-color: var(--footer-bg);
+   margin-top: auto;
+}
+
+.socials-list {
+   display: flex;
+   gap: 1.5em;
+}
+
+.socials-list > li {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
